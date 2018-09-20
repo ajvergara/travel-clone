@@ -1,0 +1,27 @@
+{
+  "name": "travel-clone",
+  "version": "1.0.0",
+  "description": "A fictional travel site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajvergara/travel-clone.git"
+  },
+  "author": "AJ Vergara",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ajvergara/travel-clone/issues"
+  },
+  "homepage": "https://github.com/ajvergara/travel-clone#readme",
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "normalize.css": "^8.0.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-watch": "^5.0.1"
+  }
+}
