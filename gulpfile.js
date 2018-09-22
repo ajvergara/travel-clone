@@ -5,11 +5,12 @@ const gulp         = require("gulp"),
       simpleVars   = require("postcss-simple-vars"),
       cssImport    = require("postcss-import"),
       cssNested    = require("postcss-nested"),
+      cssMixins    = require("postcss-mixins"),
       browserSync  = require("browser-sync").create();
 
 gulp.task("styles", function(){
   return gulp.src("./app/assets/styles/styles.css")
-    .pipe(postcss([cssImport, simpleVars, autoprefixer, cssNested]))
+    .pipe(postcss([cssImport, cssMixins, simpleVars, autoprefixer, cssNested]))
     .on("error", function(errorInfo){
       console.log(errorInfo.toString());
       this.emit("end");
