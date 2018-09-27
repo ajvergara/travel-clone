@@ -1,7 +1,11 @@
 .heading{
-  font-size: 2.875rem;
+  font-size: 1.9rem;
   color: $mainBlue;
   font-weight: 300;
+
+  @mixin atMedium{
+    font-size: 2.875rem;
+  }
 
   &--no-margin-top{
     margin-top: 0;
@@ -20,7 +24,11 @@
   }
 
   &--small{
-    font-size: 1.8rem;
+    font-size: 1.2rem;
+
+    @mixin atMedium{
+      font-size: 1.8rem;
+    }
   }
 
   &--orange{
