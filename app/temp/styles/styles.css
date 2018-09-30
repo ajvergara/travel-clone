@@ -568,6 +568,14 @@ img{
     padding-right: 65px;
   }
 
+.row--gutters-larger{
+    margin-right: -100px;
+  }
+
+.row--gutters-larger > div{
+    padding-right: 100px;
+  }
+
 /* Mixin Medium */
 
 @media (min-width: 768px){
@@ -578,6 +586,11 @@ img{
 
     .row__medium-4--larger{
       width: 37%;
+    }
+
+    .row__medium-6{
+      width: 50%;
+      float: left;
     }
 
     .row__medium-8{
@@ -614,5 +627,37 @@ img{
   }
 
 .generic-container p a {
+    font-weight: 500;
+  }
+
+.features{
+  padding-left: 90px;
+  position: relative;
+  padding-bottom: 2.5rem;
+}
+
+.features__img{
+    position: absolute;
+    left: 0;
+  }
+
+.features__title{
+    font-size: 1.875rem;
+    font-weight: 300;
+  }
+
+.section-title{
+  text-align: center;
+  font-weight: 300;
+  font-size: 3.75rem;
+}
+
+.section-title__icon{
+    position: relative;
+    padding-right: .6rem;
+    top: 8px;
+  }
+
+.section-title strong{
     font-weight: 500;
   }
